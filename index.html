@@ -80,24 +80,62 @@
       </ul>
     </section>
     <section class="form-container">
+      <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
       <b>ЗАИНТЕРЕСОВАЛИСЬ?</b>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <button type="button" name="search-hotels-button" class="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+      <label for="search-hotels-button" class="visually-hidden">Кнопка вызова формы поиска гостиницы</label>
+      <button type="button" name="search-hotels-button" class="button" id="search-hotels-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       <form class="search-hotels-form" action="index.html" method="post">
         <p>
-          <label for=""></label>
-          <input type="text" name="" value="">
+          <span class="visually-hidden">Выбор даты заезда</span>
+          <label for="date-in">ДАТА ЗАЕЗДА:</label>
+          <input type="text" name="date-in" id="date-in" placeholder="24 АПРЕЛЯ 2017">
         </p>
         <p>
-          <label for=""></label>
-          <input type="text" name="" value="">
+          <span class="visually-hidden">Выбор даты выезда</span>
+          <label for="">ДАТА ВЫЕЗДА:</label>
+          <input type="text" name="date-out" id="date-out" placeholder="4 ИЮЛЯ 2017">
         </p>
+        <p>
+          <span class="visually-hidden">Количество взрослых</span>
+          <label for="adults">ВЗРОСЛЫЕ:</label>
+          <input type="text" name="adults" id="adults" placeholder="2">
+        </p>
+        <p>
+          <span class="visually-hidden">Количество детей</span>
+          <label for="children">ДЕТИ:</label>
+          <input type="text" name="children" id="children" placeholder="0">
+        </p>
+        <label for="form-button" class="visually-hidden">Кнопка отправки формы поиска гостиницы</label>
+        <button type="submit" class="form-button" id="form-button">НАЙТИ</button>
       </form>
+      <div class="map">
+        <h2 class="visually-hidden">Карта местности Седоны</h2>
+        <img src="img/map.png" alt="Карта местности Седоны" width="" height="">
+      </div>
     </section>
   </main>
   <footer>
-
+    <span class="hashtag">#VISITSEDONA</span>
+    <ul class="social-buttons">
+      <li>
+        <a href="#" class="social-button tw-link"></a>
+        <span class="visually-hidden">Твиттер</span>
+      </li>
+      <li>
+        <a href="#" class="social-button fb-link"></a>
+        <span class="visually-hidden">Фейсбук</span>
+      </li>
+      <li>
+        <a href="#" class="social-button yt-link"></a>
+        <span class="visually-hidden">Ютуб</span>
+      </li>
+    </ul>
+    <p>
+      <span>WEBSITE BY</span>
+      <a href="#" class="footer-logo"></a>
+    </p>
   </footer>
 </body>
 
