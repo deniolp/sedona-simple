@@ -7,5 +7,181 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+
   font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
 }
+
+a {
+	text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-navigation a {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.site-navigation,
+.features-list,
+.features-list-wrapper,
+.social-buttons {
+  list-style: none;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner p:first-of-type {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.banner p:last-of-type {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  color: #ffffff;
+  background-color:  #81b3d2;
+}
+
+.feature-item h3,
+.features-list h3,
+.feature-item-grey h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.feature-number,
+.feature-item p,
+.features-list p,
+.feature-item-grey span,
+.feature-item-grey p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.features-list h3,
+.feature-item-grey h3 {
+  color: #000000;
+}
+
+.features-list p,
+.feature-item-grey span,
+.feature-item-grey p {
+  color: #333333;
+}
+
+.form-container b {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.form-container p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.search-button,
+.form-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.search-button:active,
+.form-button:active {
+  color: rgba(255, 255, 255, 0.302);
+}
+
+.search-button {
+  background-color: #766357;
+}
+
+.search-button:hover,
+.search-button:focus {
+  background-color: #604e43;
+}
+
+.search-button:active {
+  background-color: #503e33;
+}
+
+.form-button {
+  background-color: #81b3d2;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #669ec0;
+}
+
+.form-button:active {
+  background-color: #5496bd;
+}
+
+.search-hotels-form p,
+.search-hotels-form input {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000000;
