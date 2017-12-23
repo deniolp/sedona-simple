@@ -9,7 +9,8 @@
 </head>
 
 <body>
-  <header class="main-header container">
+  <div class="container">
+  <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
           <img src="img/logo.png" width="138" height="70" alt="Седона">
@@ -22,7 +23,7 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
+  <main>
     <h1 class="visually-hidden">Сайт выбота гостиниц в Седоне</h1>
     <section class="banner">
       <h2 class="visually-hidden">Вступительный раздел с баннером о Седоне</h2>
@@ -34,7 +35,7 @@
       <h2 class="visually-hidden">Преимущества отдыха в Седоне!</h2>
       <div class="feature-item-big1">
         <div class="feature-item">
-          <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
+          <h3>НАСТОЯЩИЙ<br> ГОРОДОК</h3>
           <span class="feature-number">— №1 —</span>
           <p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
@@ -57,9 +58,9 @@
       <div class="feature-item-big2">
         <div class="feature-item-img2"></div>
         <div class="feature-item">
-          <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+          <h3>ТАМ ЕСТЬ<br> МОСТ ДЬЯВОЛА</h3>
           <span class="feature-number">— №2 —</span>
-          <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+          <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО<br> ВЫ ОСМЕЛИТЕСЬ</p>
         </div>
       </div>
       <ul class="features-list-wrapper">
@@ -88,26 +89,34 @@
       <div class="form-wrapper">
         <button type="button" name="search-hotels-button" class="search-button" id="search-hotels-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         <form class="search-hotels-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <span class="visually-hidden">Выбор даты заезда</span>
-            <label for="date-in">ДАТА ЗАЕЗДА:</label>
-            <input type="text" name="date-in" id="date-in" placeholder="24 АПРЕЛЯ 2017">
+          <p class="date-in">
+            <label>
+              <span>ДАТА ЗАЕЗДА:</span>
+              <span class="visually-hidden">Выбор даты заезда</span>
+              <input type="text" name="date-in" id="date-in" placeholder="24 АПРЕЛЯ 2017">
+            </label>
           </p>
-          <p>
-            <span class="visually-hidden">Выбор даты выезда</span>
-            <label for="date-out">ДАТА ВЫЕЗДА:</label>
-            <input type="text" name="date-out" id="date-out" placeholder="4 ИЮЛЯ 2017">
+          <p class="date-out">
+            <label>
+              <span>ДАТА ВЫЕЗДА:</span>
+              <span class="visually-hidden">Выбор даты выезда</span>
+              <input type="text" name="date-out" id="date-out" placeholder="4 ИЮЛЯ 2017">
+            </label>
           </p>
-          <p>
-            <span class="visually-hidden">Количество взрослых</span>
-            <label for="adults">ВЗРОСЛЫЕ:</label>
-            <input type="text" name="adults" id="adults" placeholder="2">
-          </p>
-          <p>
-            <span class="visually-hidden">Количество детей</span>
-            <label for="children">ДЕТИ:</label>
-            <input type="text" name="children" id="children" placeholder="0">
-          </p>
+          <div class="adults-children">
+            <p>
+              <span class="visually-hidden">Количество взрослых</span>
+              <span class="adults-less"></span>
+              <label for="adults" class="adults">ВЗРОСЛЫЕ:</label>
+              <input type="text" name="adults" id="adults" placeholder="2">
+            </p>
+            <p>
+              <span class="visually-hidden">Количество детей</span>
+              <span class="children-less"></span>
+              <label for="children" class="children">ДЕТИ:</label>
+              <input type="text" name="children" id="children" placeholder="0">
+            </p>
+          </div>
           <label for="form-button" class="visually-hidden">Кнопка отправки формы поиска гостиницы</label>
           <button type="submit" class="form-button" id="form-button">НАЙТИ</button>
         </form>
@@ -117,7 +126,7 @@
       </div>
     </section>
   </main>
-  <footer class="container main-footer main-footer-margin">
+  <footer class="main-footer main-footer-margin">
     <p>
       <span class="hashtag">#VISITSEDONA</span>
     </p>
@@ -137,5 +146,6 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo"></a>
     </p>
   </footer>
+</div>
 </body>
 </html>
