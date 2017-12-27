@@ -401,6 +401,7 @@ input[type="radio"].visually-hidden {
 
 .date-in,
 .date-out {
+  position: relative;
   width: 460px;
   min-height: 38px;
   padding: 15px 0;
@@ -423,6 +424,37 @@ input[type="radio"].visually-hidden {
   padding: 10px;
 }
 
+.calendar {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 22px;
+  background-image: url("../img/calendar.svg");
+  top: 22px;
+  left: 428px;
+  z-index: 10;
+}
+
+.search-hotels-form input:hover {
+  background-color: #ebebeb;
+}
+
+.search-hotels-form input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  padding: 8px;
+  outline: 0;
+}
+
+.calendar:hover,
+.calendar:focus {
+  background-image: url("../img/calendar-h.svg");
+}
+
+.calendar:active {
+  background-image: url("../img/calendar-act.svg");
+}
+
 .adults-children {
   display: -webkit-flex;
   display: -ms-flex;
@@ -437,7 +469,11 @@ input[type="radio"].visually-hidden {
 
 .adults-children input {
   width: 113px;
-  padding: 10px 50px 10px 51px;
+  padding: 10px 50px 10px 52px;
+}
+
+.adults-children input:focus {
+  padding: 8px 48px 8px 49px;
 }
 
 .adults::before,
@@ -450,11 +486,13 @@ input[type="radio"].visually-hidden {
   height: 3px;
   background-color: #a9a9a9;
   top: 18px;
+  z-index: 10;
 }
 
 .adults::after,
 .children::after {
   transform: rotate(90deg);
+  z-index: 10;
 }
 
 .adults {
@@ -482,6 +520,7 @@ input[type="radio"].visually-hidden {
   height: 3px;
   background-color: #a9a9a9;
   top: 18px;
+  z-index: 10;
 }
 
 .adults-less {
@@ -490,6 +529,30 @@ input[type="radio"].visually-hidden {
 
 .children-less {
   left: 80px;
+}
+
+.adults-less:hover,
+.children-less:hover,
+.adults:hover::before,
+.adults:hover::after,
+.children:hover::before,
+.children:hover::after,
+.adults-less:focus,
+.children-less:focus,
+.adults:focus::before,
+.adults:focus::after,
+.children:focus::before,
+.children:focus::after {
+  background-color: #000000;
+}
+
+.adults-less:active,
+.children-less:active,
+.adults:active::before,
+.adults:active::after,
+.children:active::before,
+.children:active::after {
+  background-color: #81b3d2;
 }
 
 .form-button {
@@ -552,6 +615,14 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/footer-logo.svg");
 }
 
+.footer-logo:hover {
+  background-image:  url("../img/footer-logo-h.svg");
+}
+
+.footer-logo:active {
+  background-image:  url("../img/footer-logo-act.svg");
+}
+
 .social-buttons {
   display: flex;
   justify-content: space-between;
@@ -562,26 +633,24 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
   width: 46px;
   height: 48px;
+  margin-left: 3px;
+  margin-right: 3px;
+  fill: #fff;
   background-color: #81b3d2;
 }
 
-.tw-link {
-  background-image: url("../img/tw.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
 }
 
-.fb-link {
-  background-image: url("../img/fb.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.yt-link {
-  background-image: url("../img/yt.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.social-button:active {
+  background-color: #5496bd;
+  fill: rgba(255, 255, 255, 0.3);
 }
