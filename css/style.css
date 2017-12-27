@@ -431,9 +431,30 @@ input[type="radio"].visually-hidden {
   margin-top: 13px;
 }
 
+.adults-children p {
+  position: relative;
+}
+
 .adults-children input {
   width: 113px;
-  padding: 10px 50px;
+  padding: 10px 50px 10px 51px;
+}
+
+.adults::before,
+.children::before,
+.adults::after,
+.children::after {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+  top: 18px;
+}
+
+.adults::after,
+.children::after {
+  transform: rotate(90deg);
 }
 
 .adults {
@@ -442,6 +463,33 @@ input[type="radio"].visually-hidden {
 
 .children {
   margin-right: 24px;
+}
+
+.adults::before,
+.adults::after {
+  left: 199px;
+}
+
+.children::before,
+.children::after {
+  left: 155px;
+}
+
+.adults-less,
+.children-less {
+  position: absolute;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+  top: 18px;
+}
+
+.adults-less {
+  left: 126px;
+}
+
+.children-less {
+  left: 80px;
 }
 
 .form-button {
@@ -459,6 +507,10 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: 593px;
   background-image: url("../img/map.jpg");
+}
+
+.map iframe {
+  border: none;
 }
 
 .main-footer {
