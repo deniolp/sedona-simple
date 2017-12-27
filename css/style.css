@@ -390,6 +390,10 @@ input[type="radio"].visually-hidden {
   min-height: 395px;
 }
 
+.form-remove {
+  display: none;
+}
+
 .search-hotels-form p,
 .search-hotels-form input {
   font-size: 14px;
