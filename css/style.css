@@ -291,6 +291,10 @@ input[type="radio"].visually-hidden {
   margin-top: 20px;
 }
 
+.feature-item-grey {
+  background-color: #eeeeee;
+}
+
 .feature-item-grey p{
   margin-top: 20px;
 }
@@ -463,10 +467,12 @@ input[type="radio"].visually-hidden {
 .calendar:hover,
 .calendar:focus {
   background-image: url("../img/calendar-h.svg");
+  cursor: pointer;
 }
 
 .calendar:active {
   background-image: url("../img/calendar-act.svg");
+  cursor: pointer;
 }
 
 .adults-children {
@@ -487,24 +493,28 @@ input[type="radio"].visually-hidden {
 }
 
 .adults-children input:focus {
-  padding: 8px 48px 8px 49px;
+  padding: 8px 48px 8px 50px;
 }
 
-.adults::before,
-.children::before,
-.adults::after,
-.children::after {
+.adults-more,
+.children-more,
+.adults-more::after,
+.children-more::after {
   position: absolute;
   content: "";
   width: 11px;
   height: 3px;
   background-color: #a9a9a9;
-  top: 18px;
   z-index: 10;
 }
 
-.adults::after,
-.children::after {
+.adults-more,
+.children-more {
+  top: 18px;
+}
+
+.adults-more::after,
+.children-more::after {
   transform: rotate(90deg);
   z-index: 10;
 }
@@ -517,13 +527,11 @@ input[type="radio"].visually-hidden {
   margin-right: 24px;
 }
 
-.adults::before,
-.adults::after {
+.adults-more {
   left: 199px;
 }
 
-.children::before,
-.children::after {
+.children-more {
   left: 155px;
 }
 
@@ -547,17 +555,18 @@ input[type="radio"].visually-hidden {
 
 .adults-less:hover,
 .children-less:hover,
-.adults:hover::before,
-.adults:hover::after,
-.children:hover::before,
-.children:hover::after,
+.adults-more:hover,
+.adults-more:hover::after,
+.children-more:hover,
+.children-more:hover::after,
 .adults-less:focus,
 .children-less:focus,
-.adults:focus::before,
-.adults:focus::after,
-.children:focus::before,
-.children:focus::after {
+.adults-more:focus,
+.adults-more:focus::after,
+.children-more:focus,
+.children-more:focus::after {
   background-color: #000000;
+  cursor: pointer;
 }
 
 .adults-less:active,
@@ -574,10 +583,6 @@ input[type="radio"].visually-hidden {
   height: 58px;
   cursor: pointer;
   margin-top: 54px;
-}
-
-.feature-item-grey {
-  background-color: #eeeeee;
 }
 
 .map {
